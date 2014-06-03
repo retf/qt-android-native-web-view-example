@@ -30,3 +30,6 @@ FORMS    += mainwindow.ui
 CONFIG += mobility
 MOBILITY = 
 
+OTHER_FILES += \
+    android/AndroidManifest.xml
+

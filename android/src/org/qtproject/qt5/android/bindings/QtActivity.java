@@ -182,7 +182,7 @@ public class QtActivity extends Activity implements NativeCalls
                                                         // this repository is used to push Qt snapshots.
     private String[] m_qtLibs = null; // required qt libs
     
-  //-------------WEBVIEW----------------
+	//-------------WEBVIEW----------------
 	protected ArrayList<WebView> webViewsList = new ArrayList<WebView>();
 
 	//-----------------------------------------------------------------------------
@@ -215,7 +215,7 @@ public class QtActivity extends Activity implements NativeCalls
 			WebView webView = new WebView(QtActivity.this.getApplicationContext());
 			webView.setTag(msg.what);
 			webView.getSettings().setJavaScriptEnabled(true);
-			webView.setWebViewClient(new WebViewClient());
+			webView.setWebChromeClient(new WebChromeClient());
 			webView.setBackgroundColor(Color.BLACK);
 			webViewsList.add(webView);
 		}
