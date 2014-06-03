@@ -215,7 +215,7 @@ public class QtActivity extends Activity implements NativeCalls
 			WebView webView = new WebView(QtActivity.this);
 			webView.setTag(msg.what);
 			webView.getSettings().setJavaScriptEnabled(true);
-			webView.setWebChromeClient(new WebChromeClient());
+			webView.setWebViewClient(new WebViewClient());
 			webView.setBackgroundColor(Color.BLACK);
 			webViewsList.add(webView);
 		}
