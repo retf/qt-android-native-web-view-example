@@ -19,12 +19,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    if( m_webVeiw )
-        delete m_webVeiw;
-
-    m_webVeiw = new QtCustomAndroidWebView( this );
-    m_webVeiw->move( 10, 45 );
-    m_webVeiw->resize( 700, 600 );
+    if( !m_webVeiw )
+    {
+        m_webVeiw = new QtCustomAndroidWebView( this );
+        m_webVeiw->move( 10, 45 );
+        m_webVeiw->resize( 700, 600 );
+    }
 
     m_webVeiw->loadURL( ui->lineEdit->text() );
 }
