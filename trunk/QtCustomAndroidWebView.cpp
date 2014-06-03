@@ -39,7 +39,6 @@ void QtCustomAndroidWebView::loadHtmlData( QString const& data ) const
 void QtCustomAndroidWebView::move( int x, int y )
 {
     QWidget::move( x, y );
-
     m_nativeSender.moveWebView( androidID(), x, y );
 }
 
