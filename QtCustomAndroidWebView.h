@@ -2,7 +2,6 @@
 
 #include <QtWidgets/QWidget>
 #include <QtCore/QPoint>
-#include <QtCore/QRect>
 
 #include "AndroidNativeCallsSender.h"
 
