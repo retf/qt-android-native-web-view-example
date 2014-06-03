@@ -8,7 +8,7 @@ MainWindow::MainWindow( QWidget *parent )
     ui->setupUi(this);
 
     m_webVeiw = new QtCustomAndroidWebView( this );
-    m_webVeiw->move( 10, 30 );
+    m_webVeiw->move( 10, 45 );
     m_webVeiw->resize( 300, 200 );
 }
 
