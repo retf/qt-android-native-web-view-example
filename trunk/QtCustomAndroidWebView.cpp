@@ -1,6 +1,6 @@
 #include "QtCustomAndroidWebView.h"
 
-#include <QtWidgets/QLayout>
+//#include <QtWidgets/QLayout>
 
 //-----------------------------------------------------------------------------
 int QtCustomAndroidWebView::sm_tag = 0;
