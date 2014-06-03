@@ -8,11 +8,11 @@ int QtCustomAndroidWebView::sm_tag = 0;
 //-----------------------------------------------------------------------------
 QtCustomAndroidWebView::QtCustomAndroidWebView( QWidget *parent )
     : QWidget( parent )
+    , m_androidID( generateNewTag() )
 {
 //    if( parent && parent->layout() )
 //        parent->layout()->addWidget( this );
 
-    generateNewTag();
     m_nativeSender.createNewWebView( androidID() );
     m_nativeSender.attachWebViewToMainLayout( androidID() );
 }
