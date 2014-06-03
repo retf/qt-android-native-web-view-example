@@ -212,7 +212,7 @@ public class QtActivity extends Activity implements NativeCalls
 		@SuppressLint("SetJavaScriptEnabled")
 		@Override
 		public void handleMessage(Message msg) {
-			WebView webView = new WebView(QtActivity.this.getApplicationContext());
+			WebView webView = new WebView(QtActivity.this);
 			webView.setTag(msg.what);
 			webView.getSettings().setJavaScriptEnabled(true);
 			webView.setWebChromeClient(new WebChromeClient());
