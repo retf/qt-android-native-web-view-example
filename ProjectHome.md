@@ -1,0 +1,1 @@
+It is small example of using Android Native Web View in Qt5 project.
